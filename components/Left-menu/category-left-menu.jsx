@@ -6,17 +6,26 @@ let CategoryLinks = [
     {
         linkslabel: "Accessories",
         accessories: [
-            {
-            car1: "Ford",
-            car2: "Ford"
-        }
-    ]
+            {car: "Ford"},
+            {car: "Ford 1"},
+            {car: "Ford 2"}
+        ]
     },
     {
         linkslabel: "Bags",
+        accessories: [
+            {car: "Ford"},
+            {car: "Ford 1"},
+            {car: "Ford 2"}
+        ]
     },
     {
         linkslabel: "Clothing",
+        accessories: [
+            {car: "Ford"},
+            {car: "Ford 1"},
+            {car: "Ford 2"}
+        ]
     },
     {
         linkslabel: "Shoes",
@@ -30,12 +39,16 @@ const CategoryLinksBlock = (CategoryLinks &&
     && CategoryLinks).map(item => (
         <li>
             <a href="#">{item.linkslabel}</a>
+            {item.accessories && Array.isArray(item.accessories) &&
             <ul>
-                <li>
-                    <a href="#">{item.linkslabel.accessories}</a>
-                </li>
+                {item.accessories.map(subCategory=>
+                    <li>
+                       <a href="#">{subCategory.car}</a>
+                    </li>
+                )}
                 
-            </ul>
+                
+            </ul>}
         </li>
         
 
