@@ -1,0 +1,36 @@
+/* Color */
+$primaryColor: #0da19a;
+$secondaryColor: #1197D5;
+$orange: #EE5C5C;
+$black: #222222;
+$greyMedium: #444444;
+$greyLight: #f5f5f5;
+$white: #FFFFFF;
+
+/* Typography */
+$primaryFont:'Open Sans', sans-serif;
+$primaryFontSize: 1.125rem; //18px
+$fontXSmall: 0.75rem; //12px
+$fontXMSmall: 0.8125rem; //13
+$fontMSmall: 0.875rem; //14px
+$fontHSmall: 0.9375rem; //15px
+$fontSmall: 1rem; //16px
+$fontRegular: 1.125rem; //18px
+$fontLarge: 1.5rem; //24px
+$fontXLarge: 1.875rem; //30px
+$fontXXLarge: 2.1875rem; //35px
+$fontheading: 3rem; //48px
+$light: 300;
+$normal: 400;
+$semibold: 600;
+$bold: 700;
+$lineHeightStd: 1.25rem; //20px
+$lineHeightMed: 1.375rem; //22px
+
+
+// override bootstrap colours
+$primary: $primaryColor;
+$secondary: $secondaryColor;
+$light: $greyLight;
+$dark: $black;
+$btnPrimary: $orange;

@@ -1,0 +1,16 @@
+@import "../Global/Global.scss";
+@import "../../scss/vars.scss";
+.designer-links-block{
+    margin-top: 15px;
+   a{
+       font-size: $fontXSmall;
+       color: $black;
+       line-height:18px;
+       display: block;
+   }
+   b{
+       text-transform: uppercase;
+       font-size: $fontXMSmall;
+   }
+}
+
