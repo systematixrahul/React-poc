@@ -101,16 +101,17 @@ li {
     color: $white;
   }
 }
-@mixin btn_orange {
-  color: $white;
+@mixin btn_black {
+  color:$white;
   font-size: $fontSmall;
   font-weight: $semibold;
   line-height: $lineHeightStd;
   text-align: center;
-  background-color: $orange;
+  background-color: $black;
   border-radius: 2px;
+  padding:8px 16px;
   &:hover {
-    background-color: #e04444;
+    background-color:#333;
   }
 }
 @mixin btn_green {
@@ -286,8 +287,8 @@ button {
   padding-left: 0;
   padding-right: 0;
 }
-.btn_orange {
-  @include btn_orange;
+.btn_black {
+  @include btn_black;
 }
 @media screen and (max-width: 1199px) {
   .form-section {

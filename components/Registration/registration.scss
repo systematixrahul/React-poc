@@ -1,0 +1,13 @@
+@import "../Global/Global.scss";
+@import "../../scss/vars.scss";
+.signup-container{
+    margin:150px auto;
+    max-width: 500px;
+    min-height: 500px;
+    .text-info{
+        font-size:$fontXSmall;
+        color:$black !important;
+        text-align: center;
+        padding-top: 20px;
+    }
+}

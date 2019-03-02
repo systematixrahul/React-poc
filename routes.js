@@ -13,3 +13,8 @@ routes.add({
     pattern: "/all-category/",
     page: "all-category"
   });
+  routes.add({
+    name: "Login",
+    pattern: "/login/",
+    page: "login/"
+  });

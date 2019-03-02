@@ -30,7 +30,7 @@ class Header extends React.Component {
                         <Col md="5" sm="5">
                             <ul className="float-right">
                                 <li><a href="#">English</a></li>
-                                <li><a href="#">Login</a></li>
+                                <li><a href="/login">Login</a></li>
                                 <li><a href="#">Wishlist</a></li>
                                 <li><a href="#">shopping bag (0)</a></li>
                             </ul>
