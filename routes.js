@@ -8,3 +8,8 @@ routes.add({
     pattern: "/men-product/",
     page: "men-product"
   });
+  routes.add({
+    name: "AllCategoryProductBlock",
+    pattern: "/all-category/",
+    page: "all-category"
+  });

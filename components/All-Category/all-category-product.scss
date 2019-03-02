@@ -1,0 +1,28 @@
+@import "../Global/Global.scss";
+@import "../../scss/vars.scss";
+.product-container{
+    margin-top:90px;
+        .container{
+            max-width:98%;
+            .block-heading{
+                margin:0;
+                padding:20px 0 0;
+            }
+            .product-content-block{ 
+                text-align: center
+;                .product-name{
+                    font-size: $fontMSmall;
+                    font-weight: bold;
+                }
+                .product-discription, .price{
+                    font-size: $fontXSmall;
+                }
+                .price{
+                    font-weight: bold;
+                    margin-bottom: 15px;
+                }
+            }
+           
+        }
+}
+

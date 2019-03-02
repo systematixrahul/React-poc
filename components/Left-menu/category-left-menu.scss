@@ -11,5 +11,14 @@
     text-transform: uppercase;
     font-size: $fontXMSmall;
     }
+    ul{
+        li{
+            padding-left: 10px;
+            ul{
+                li{padding-left: 10px;}
+            }
+        }
+    }
+
 }
 

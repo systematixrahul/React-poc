@@ -6,33 +6,46 @@ let CategoryLinks = [
     {
         linkslabel: "Accessories",
         accessories: [
-            {car: "Ford"},
-            {car: "Ford 1"},
-            {car: "Ford 2"}
+            {manaccessories: "Blankets"},
+            {manaccessories: "Eyewear"},
+            {manaccessories: "Gloves"},
+            {manaccessories: "Hats"},
+            {manaccessories: "Jewelry"}
         ]
     },
     {
         linkslabel: "Bags",
         accessories: [
-            {car: "Ford"},
-            {car: "Ford 1"},
-            {car: "Ford 2"}
+            {manaccessories: "Blankets"},
+            {manaccessories: "Eyewear"},
+            {manaccessories: "Gloves"},
+            {manaccessories: "Hats"},
+            {manaccessories: "Jewelry"}
         ]
     },
     {
         linkslabel: "Clothing",
         accessories: [
-            {car: "Ford"},
-            {car: "Ford 1"},
-            {car: "Ford 2"}
+            {manaccessories: "Blankets"},
+            {manaccessories: "Eyewear"},
+            {manaccessories: "Gloves"},
+            {manaccessories: "Hats"},
+            {manaccessories: "Jewelry"}
         ]
     },
     {
         linkslabel: "Shoes",
+        accessories: [
+            {manaccessories: "Blankets"},
+            {manaccessories: "Eyewear"},
+            {manaccessories: "Gloves"},
+            {manaccessories: "Hats"},
+            {manaccessories: "Jewelry"}
+        ]
     }
     
 ]
-//CategoryLinks[0].linkslabel.map(accessories => accessories.car1.map(cat => console.log(car1.name)));
+
 
 const CategoryLinksBlock = (CategoryLinks &&
     Array.isArray(CategoryLinks)
@@ -43,7 +56,7 @@ const CategoryLinksBlock = (CategoryLinks &&
             <ul>
                 {item.accessories.map(subCategory=>
                     <li>
-                       <a href="#">{subCategory.car}</a>
+                       <a href="#">{subCategory.manaccessories}</a>
                     </li>
                 )}
                 
@@ -59,7 +72,7 @@ export default (props) => {
     return (
         <>
             <div className="category-links-block">
-                <div><b>All categories</b></div>
+                <div><a href="/all-category"><b>All categories</b></a></div>
                 <ul>
                     {CategoryLinksBlock}
                 </ul>
