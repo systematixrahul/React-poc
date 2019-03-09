@@ -10,7 +10,7 @@ class Footer extends React.Component {
                     <Row>
                         <Col md="12" sm="12">
                         <ul className="footer-container">
-                            <li><a href="#">customer care</a></li>
+                            <li><a href="/customer-care">customer care</a></li>
                             <li><a href="#">locations</a></li>
                             <li><a href="#">Editorial Archive</a></li>
                             <li><a href="#">careers</a></li>

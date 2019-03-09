@@ -1,6 +1,6 @@
 {
   "devFiles": [
-    "static/development/dll/dll_724ae78efd21d9b28c3a.js"
+    "static/development/dll/dll_f04e1faf2b66b6a0b2e3.js"
   ],
   "pages": {
     "/_app": [
@@ -11,19 +11,13 @@
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/index": [
+    "/customer-care": [
       "static/runtime/webpack.js",
       "static/css/styles.chunk.css",
       "static/chunks/styles.js",
       "static/runtime/main.js"
     ],
     "/men-product": [
-      "static/runtime/webpack.js",
-      "static/css/styles.chunk.css",
-      "static/chunks/styles.js",
-      "static/runtime/main.js"
-    ],
-    "/": [
       "static/runtime/webpack.js",
       "static/css/styles.chunk.css",
       "static/chunks/styles.js",

@@ -13,12 +13,13 @@
   "license": "ISC",
   "dependencies": {
     "@zeit/next-sass": "^1.0.1",
+    "availity-reactstrap-validation": "^2.5.1",
     "bootstrap": "^4.2.1",
     "next": "^7.0.2",
     "next-routes": "^1.4.2",
     "node-sass": "^4.11.0",
-    "react": "^16.8.1",
-    "react-dom": "^16.8.1",
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3",
     "react-helmet": "^5.2.0",
     "reactstrap": "^7.1.0"
   }

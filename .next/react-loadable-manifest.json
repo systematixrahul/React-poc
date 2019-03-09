@@ -1,19 +1,13 @@
 {
-  "./home.scss": [
+  "./header.scss": [
     {
-      "id": "./components/Home/home.scss",
-      "name": "./components/Home/home.scss",
+      "id": "./components/Header/header.scss",
+      "name": "./components/Header/header.scss",
       "file": "static/chunks/styles.js",
       "publicPath": "static/chunks/styles.js"
     }
   ],
   "undefined": [
-    {
-      "id": 4,
-      "name": null,
-      "file": "static/chunks/styles.js",
-      "publicPath": "static/chunks/styles.js"
-    },
     {
       "id": 5,
       "name": null,
@@ -39,12 +33,6 @@
       "publicPath": "static/chunks/styles.js"
     },
     {
-      "id": 10,
-      "name": null,
-      "file": "static/chunks/styles.js",
-      "publicPath": "static/chunks/styles.js"
-    },
-    {
       "id": 11,
       "name": null,
       "file": "static/chunks/styles.js",
@@ -55,20 +43,32 @@
       "name": null,
       "file": "static/chunks/styles.js",
       "publicPath": "static/chunks/styles.js"
+    },
+    {
+      "id": 13,
+      "name": null,
+      "file": "static/chunks/styles.js",
+      "publicPath": "static/chunks/styles.js"
+    },
+    {
+      "id": 14,
+      "name": null,
+      "file": "static/chunks/styles.js",
+      "publicPath": "static/chunks/styles.js"
+    }
+  ],
+  "./customer-care.scss": [
+    {
+      "id": "./components/Customer-care/customer-care.scss",
+      "name": "./components/Customer-care/customer-care.scss",
+      "file": "static/chunks/styles.js",
+      "publicPath": "static/chunks/styles.js"
     }
   ],
   "../../components/Global/Global.scss": [
     {
       "id": "./components/Global/Global.scss",
       "name": "./components/Global/Global.scss",
-      "file": "static/chunks/styles.js",
-      "publicPath": "static/chunks/styles.js"
-    }
-  ],
-  "./header.scss": [
-    {
-      "id": "./components/Header/header.scss",
-      "name": "./components/Header/header.scss",
       "file": "static/chunks/styles.js",
       "publicPath": "static/chunks/styles.js"
     }

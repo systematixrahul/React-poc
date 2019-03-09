@@ -1,0 +1,24 @@
+@import "../Global/Global.scss";
+@import "../../scss/vars.scss";
+.customercare-container{
+    margin-top:80px;
+    font-size: $fontMSmall;
+    .container{
+        max-width: 100%;
+        a{
+            color:$black;
+            font-size: $fontMSmall;
+        }
+        h2{
+            font-size: $fontRegular;
+            font-weight: bold;
+        }
+        p{
+            margin-bottom: 5px;
+        }
+    }
+    
+}
+
+.collapsible {display: none;}
+.collapsible.open {display: block;}

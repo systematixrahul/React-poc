@@ -18,3 +18,14 @@ routes.add({
     pattern: "/login/",
     page: "login/"
   });
+
+  routes.add({
+    name: "Men Product Detail",
+    pattern: "/men-product-detail/",
+    page: "men-product-detail/"
+  });
+  routes.add({
+    name: "Customer Care",
+    pattern: "/customer-care/",
+    page: "customer-care/"
+  });

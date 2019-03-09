@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 5);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -186,7 +186,7 @@ function (_React$Component) {
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "#",
+        href: "/customer-care",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 13
@@ -549,7 +549,7 @@ function (_React$Component) {
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "#",
+        href: "/login",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 33
@@ -626,76 +626,124 @@ var _jsxFileName = "E:\\SIPL-Projects\\React-Project\\SSENSE\\components\\Left-m
 var CategoryLinks = [{
   linkslabel: "Accessories",
   accessories: [{
-    car1: "Ford",
-    car2: "Ford"
+    manaccessories: "Blankets"
+  }, {
+    manaccessories: "Eyewear"
+  }, {
+    manaccessories: "Gloves"
+  }, {
+    manaccessories: "Hats"
+  }, {
+    manaccessories: "Jewelry"
   }]
 }, {
-  linkslabel: "Bags"
+  linkslabel: "Bags",
+  accessories: [{
+    manaccessories: "Blankets"
+  }, {
+    manaccessories: "Eyewear"
+  }, {
+    manaccessories: "Gloves"
+  }, {
+    manaccessories: "Hats"
+  }, {
+    manaccessories: "Jewelry"
+  }]
 }, {
-  linkslabel: "Clothing"
+  linkslabel: "Clothing",
+  accessories: [{
+    manaccessories: "Blankets"
+  }, {
+    manaccessories: "Eyewear"
+  }, {
+    manaccessories: "Gloves"
+  }, {
+    manaccessories: "Hats"
+  }, {
+    manaccessories: "Jewelry"
+  }]
 }, {
-  linkslabel: "Shoes"
-}]; //CategoryLinks[0].linkslabel.map(accessories => accessories.car1.map(cat => console.log(car1.name)));
-
+  linkslabel: "Shoes",
+  accessories: [{
+    manaccessories: "Blankets"
+  }, {
+    manaccessories: "Eyewear"
+  }, {
+    manaccessories: "Gloves"
+  }, {
+    manaccessories: "Hats"
+  }, {
+    manaccessories: "Jewelry"
+  }]
+}];
 var CategoryLinksBlock = (CategoryLinks && Array.isArray(CategoryLinks) && CategoryLinks).map(function (item) {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31
+      lineNumber: 53
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     href: "#",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 54
     },
     __self: this
-  }, item.linkslabel), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+  }, item.linkslabel), item.accessories && Array.isArray(item.accessories) && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33
+      lineNumber: 56
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 34
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "#",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 35
-    },
-    __self: this
-  }, item.linkslabel.accessories))));
+  }, item.accessories.map(function (subCategory) {
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 58
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+      href: "#",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 59
+      },
+      __self: this
+    }, subCategory.manaccessories));
+  })));
 }) || "Loading...";
 /* harmony default export */ __webpack_exports__["default"] = (function (props) {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "category-links-block",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 48
+      lineNumber: 74
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 49
+      lineNumber: 75
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "/all-category",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 75
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 49
+      lineNumber: 75
     },
     __self: this
-  }, "All categories")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+  }, "All categories"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 50
+      lineNumber: 76
     },
     __self: this
   }, CategoryLinksBlock)));
@@ -819,6 +867,7 @@ var DesignerLinksBlock = (DesignerLinks && Array.isArray(DesignerLinks) && Desig
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Welcome; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! reactstrap */ "reactstrap");
@@ -828,7 +877,29 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Left_menu_category_left_menu__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../Left-menu/category-left-menu */ "./components/Left-menu/category-left-menu.jsx");
 /* harmony import */ var _Left_menu_designer_left_menu__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../Left-menu/designer-left-menu */ "./components/Left-menu/designer-left-menu.jsx");
 /* harmony import */ var _Right_menu_sort_right_menu__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../Right-menu/sort-right-menu */ "./components/Right-menu/sort-right-menu.jsx");
+/* harmony import */ var _routes__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../routes */ "./routes.js");
+/* harmony import */ var _routes__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_routes__WEBPACK_IMPORTED_MODULE_6__);
 var _jsxFileName = "E:\\SIPL-Projects\\React-Project\\SSENSE\\components\\Men-product\\men-product.jsx";
+
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+
 
 
 
@@ -837,7 +908,7 @@ var _jsxFileName = "E:\\SIPL-Projects\\React-Project\\SSENSE\\components\\Men-pr
 
 var MenProductListing = [{
   image: "../../static/images/s024greige_front_1.jpg",
-  productname: "Saint Laurent",
+  productname: "Rahul Saint Laurent",
   desc: "Black Logo Destroy HoodieLJ Hooker Gungahlin",
   price: "$890"
 }, {
@@ -859,7 +930,7 @@ var MenProductListing = [{
   image: "../../static/images/s029_white_navy_front.jpg",
   productname: "Saint Laurent",
   desc: "Black Logo Destroy HoodieLJ Hooker Gungahlin",
-  price: "$490"
+  price: "$590"
 }, {
   image: "../../static/images/s024greige_front_1.jpg",
   productname: "Saint Laurent",
@@ -869,135 +940,180 @@ var MenProductListing = [{
   image: "../../static/images/s024greige_front_1.jpg",
   productname: "Saint Laurent",
   desc: "Black Logo Destroy HoodieLJ Hooker Gungahlin",
-  price: "$890"
+  price: "$590"
 }, {
   image: "../../static/images/s029_white_navy_front.jpg",
   productname: "Saint Laurent",
   desc: "Black Logo Destroy HoodieLJ Hooker Gungahlin",
-  price: "$490"
+  price: "$390"
 }, {
   image: "../../static/images/s030_black_front.jpg",
   productname: "CMMN SWDN",
   desc: "Black Logo Destroy HoodieLJ Hooker Gungahlin",
-  price: "$790"
+  price: "$590"
 }];
-var MenProductBlock = (MenProductListing && Array.isArray(MenProductListing) && MenProductListing).map(function (item) {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
-    md: "3",
-    sm: "3",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 68
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "product-content-block",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 69
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: item.image,
-    alt: item.image,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 70
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "product-name",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 71
-    },
-    __self: this
-  }, item.productname), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "product-discription",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 72
-    },
-    __self: this
-  }, item.desc), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "price",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 73
-    },
-    __self: this
-  }, item.price)));
-}) || "Loading...";
-/* harmony default export */ __webpack_exports__["default"] = (function (props) {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "product-container",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 83
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Container"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 84
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 85
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
-    md: "2",
-    sm: "2",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 86
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Left_menu_category_left_menu__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 87
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Left_menu_designer_left_menu__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 88
-    },
-    __self: this
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
-    md: "8",
-    sm: "8",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 90
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 91
-    },
-    __self: this
-  }, MenProductBlock)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
-    md: "2",
-    sm: "2",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 95
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Right_menu_sort_right_menu__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 96
-    },
-    __self: this
-  }))))));
-});
+
+var Welcome =
+/*#__PURE__*/
+function (_React$Component) {
+  _inherits(Welcome, _React$Component);
+
+  function Welcome() {
+    _classCallCheck(this, Welcome);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(Welcome).apply(this, arguments));
+  }
+
+  _createClass(Welcome, [{
+    key: "render",
+    value: function render() {
+      var MenProductBlock = (MenProductListing && Array.isArray(MenProductListing) && MenProductListing).map(function (item) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
+          md: "3",
+          sm: "3",
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 73
+          },
+          __self: this
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_routes__WEBPACK_IMPORTED_MODULE_6__["Link"], {
+          href: "/men-product-detail",
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 74
+          },
+          __self: this
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "product-content-block",
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 75
+          },
+          __self: this
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+          src: item.image,
+          alt: item.image,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 76
+          },
+          __self: this
+        }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "product-name",
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 77
+          },
+          __self: this
+        }, item.productname), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "product-discription",
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 78
+          },
+          __self: this
+        }, item.desc), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "price",
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 79
+          },
+          __self: this
+        }, item.price))));
+      }) || "Loading...";
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "product-container",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 88
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Container"], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 89
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 90
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
+        md: "2",
+        sm: "2",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 91
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Left_menu_category_left_menu__WEBPACK_IMPORTED_MODULE_3__["default"], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 92
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Left_menu_designer_left_menu__WEBPACK_IMPORTED_MODULE_4__["default"], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 93
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 94
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 95
+        },
+        __self: this
+      }, " Male "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 96
+        },
+        __self: this
+      }, " Female "))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
+        md: "8",
+        sm: "8",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 99
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 100
+        },
+        __self: this
+      }, MenProductBlock)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
+        md: "2",
+        sm: "2",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 104
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Right_menu_sort_right_menu__WEBPACK_IMPORTED_MODULE_5__["default"], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 105
+        },
+        __self: this
+      }))))));
+    }
+  }]);
+
+  return Welcome;
+}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
+
+
 
 /***/ }),
 
@@ -1154,10 +1270,30 @@ routes.add({
   pattern: "/men-product/",
   page: "men-product"
 });
+routes.add({
+  name: "AllCategoryProductBlock",
+  pattern: "/all-category/",
+  page: "all-category"
+});
+routes.add({
+  name: "Login",
+  pattern: "/login/",
+  page: "login/"
+});
+routes.add({
+  name: "Men Product Detail",
+  pattern: "/men-product-detail/",
+  page: "men-product-detail/"
+});
+routes.add({
+  name: "Customer Care",
+  pattern: "/customer-care/",
+  page: "customer-care/"
+});
 
 /***/ }),
 
-/***/ 4:
+/***/ 5:
 /*!*******************************************!*\
   !*** multi ./pages/men-product/index.jsx ***!
   \*******************************************/
